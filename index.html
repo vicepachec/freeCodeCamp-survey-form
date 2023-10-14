@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required informaton</p>
+    <form id="survey-form">
+      <fieldset>
+        <label class="question" for="name" id="name-label">Enter Your Name: <input id="name" type="text" required/ placeholder="Your Name"> </label>
+        <label class="question" for="email" id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Your Email"/></label>
+        <label class="question" for="number" id="number-label" class="number">Enter Your Age(optional): <input id="number" type="number" min="13" max="110" placeholder="Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label class="question">How did you hear about us?
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">LinkedIn</option>
+            <option value="2">Social Media</option>
+            <option value="3">Familiar/Friend</option>
+            <option value="4">Google</option>
+          </select>
+        </label>
+        <label class="question">What workshops would you be interested in: (select ones you want)</label>
+        <label for="yoga"><input id="yoga" value="yoga" type="checkbox" class="check"></input>Yoga Class</label#NEWLINE>
+        <label for="massage"><input id="massage" value="massage" type="checkbox" class="check"></input>Thai Massage</label#NEWLINE>
+        <label for="cooking"><input id="cooking" value="cooking" type="checkbox" class="check">Cooking Class</label#NEWLINE>
+        <label for="hike"><input id="hike" type="checkbox" value="hike" class="check"></input>Outdoor Hike</label#NEWLINE>
+        <label class="question">Were you satisfied with the process?</label>
+        <label>Yes<input type="radio" value="Yes" class="inline" name="radio"/></label>
+        <label>No<input type="radio" value="No" class="inline" name="radio"/></label>
+        <label>If not can you explain why?
+          <textarea id="complaint" name="complaint" rows="3" cols="30" placeholder="The reason i'm not satisfied..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>  
+    </form>
+  </body>
+</html>
